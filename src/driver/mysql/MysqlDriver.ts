@@ -1257,7 +1257,7 @@ export class MysqlDriver implements Driver {
     /**
      * Creates a new connection pool for a given database credentials.
      */
-    protected createPool(connectionOptions: any): Promise<any> {
+    protected createPool(connectionOptions: any): Promise<any> { // 通过mysql创建连接池
         // create a connection pool
         const pool = this.mysql.createPool(connectionOptions)
 
